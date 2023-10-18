@@ -3,7 +3,7 @@ const fs = require('fs');
 function read_file(file_path) {
     const content = fs.readFileSync(file_path, 'utf-8');
     const lines = [...content.trim()].map(Number);
-    return lines.map(Number);
+    return lines
 }
 
 const file_path = 'input.txt';
